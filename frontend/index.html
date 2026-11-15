@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Campus Lost & Found</h1>
+    <p>Report lost items, discover found belongings and mark your items as claimed.</p>
+
+    <button id="connectBtn">Connect MetaMask</button>
+    <p id="walletStatus">Wallet not connected</p>
+
+    <section>
+      <h2>Report an Item</h2>
+      <input id="itemName" placeholder="Item name">
+      <textarea id="itemDetails" placeholder="Description and location"></textarea>
+      <button id="reportBtn">Submit Report</button>
+    </section>
+
+    <section>
+      <h2>Browse Reports</h2>
+      <button id="loadBtn">Load Reports</button>
+      <p id="reportCount">Total reports: —</p>
+      <div id="reports"></div>
+    </section>
+
+    <p id="status"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
